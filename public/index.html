@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的音樂平台</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="player-container">
+<h1>我的音樂平台</h1>
+<div class="search-container">
+<input type="text" id="searchInput" placeholder="輸入歌曲名稱或流派">
+<button class="clear-btn" onclick="clearSearch()">清除</button>
+<button class="search-btn" onclick="searchTracks()">搜索</button>
+</div>
+<audio id="audioPlayer" controls>
+<source src="" type="audio/mpeg">
+你的瀏覽器不支持音頻播放。
+</audio>
+<h2>播放列表</h2>
+<ul class="playlist" id="playlist">
+<!-- 播放列表將由 JavaScript 動態生成 -->
+</ul>
+<footer>
+<p>音樂來自 <a href="https://freemusicarchive.org">Free Music Archive</a>，遵守 CC 許可。</p>
+</footer>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
